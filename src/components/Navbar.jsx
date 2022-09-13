@@ -7,33 +7,37 @@ const Navbar = () => {
         <div className="flex items-center">
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">Khoi Le</h1>
           <ul className="hidden md:flex ">
-              <li>Home</li>
-              <li>Project</li>
-              <li>Resume</li>
-              <li>Contact Me</li>
+            <li>Home</li>
+            <li>Project</li>
+            <li>Resume</li>
+            <li>Contact Me</li>
           </ul>
         </div>
-        <div className="hidden md:flex pr-4">
-            
+        <div className="md:hidden">
+          {/* Menu Icon from Heroicon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+          {/* Menu Icon from Heroicon */}
         </div>
       </div>
-
-      {/* Menu Icon from Heroicon */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
-      </svg>
-      {/* Menu Icon from Heroicon */}
+      <ul className="absolute bg-zinc-200 w-full px-8">
+        <li className="border-b-2 border-zinc-300 w-full">Home</li>
+        <li className="border-b-2 border-zinc-300 w-full">Project</li>
+        <li className="border-b-2 border-zinc-300 w-full">Resume</li>
+        <li className="border-b-2 border-zinc-300 w-full">Contact Me</li>
+      </ul>
     </div>
   );
 };
